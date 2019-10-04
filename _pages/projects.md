@@ -2,9 +2,8 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Some of my older projects. Recent ones are in NDA territory, but otherwise cooler!
 ---
-
 {% for project in site.projects %}
 
 {% if project.redirect %}

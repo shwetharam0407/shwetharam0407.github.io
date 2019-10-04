@@ -13,7 +13,7 @@ TA for Prof. Andrea Young. Responsibilities included-
 
 - Supervising weekly labs
 - Grading lab reports, HWs and exams 
-- Changing fuses when called for!
+- Debugging circuits and changing fuses when called for!
 
 ---    
 
