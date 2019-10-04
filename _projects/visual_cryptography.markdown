@@ -9,6 +9,6 @@ img: /assets/projects/visual_cryptography/poster.pdf
 [report](/assets/projects/visual_cryptography/report.pdf)
 
 
-<iframe src="/assets/projects/visual_cryptography/poster.pdf" width="100%" height="500px">
+<iframe src="/assets/projects/visual_cryptography/poster.pdf" width="100%" height="700px">
 </iframe>
    
