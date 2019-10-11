@@ -27,3 +27,4 @@ else
   echo "Fine, do it yourself";
 fi
 
+git checkout source
