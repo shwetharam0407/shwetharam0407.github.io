@@ -13,6 +13,7 @@ rm -rf !(_site)
 
 cp -r _site/* .
 
+git fetch
 git status
 
 read -p "I will now add all changes, commit and push them. Shall I continue (y/n)?" CONT
