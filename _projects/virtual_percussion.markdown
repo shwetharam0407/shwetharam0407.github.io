@@ -9,9 +9,14 @@ A fun project I worked on as a sophomore interning at the Computer Vision and Ar
 
 It'll be interesting to revisit this, now that I know a little more of Computer Vision!
 
-<iframe width="420" height="315" frameborder="0" allowfullscreen
+<div align="center">
+<p style="position: relative; padding: 30px 0px 56.25% 0px; height: 0; overflow: hidden; max-width:420px;">
+<iframe width="100%" height="80%" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 src="https://www.youtube.com/embed/ZdDVtWi-vKY">
 </iframe>
+</p>
+</div>
+
 
 ---
 

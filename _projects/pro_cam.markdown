@@ -7,9 +7,16 @@ img: /assets/projects/pro_cam/img/h_inverse_T.png
 [report](/assets/projects/pro_cam/procam_report.pdf)
 [slides](/assets/projects/pro_cam/procam_slides.pdf)
 
-<iframe width="420" height="315" frameborder="0" allowfullscreen
+<div align="center">
+
+<p style="position: relative; padding: 30px 0px 56.25% 0px; height: 0; overflow: hidden; max-width:420px;">
+<iframe width="100%" height="100%" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 src="https://www.youtube.com/embed/OUMj7UQs5Xo">
 </iframe>
+</p>
+
+</div>
+
 
 A Pro-Cam Display System comprises of a projector and a camera. The central idea is that the image projected by the projector is compensated to suit the view-point of the camera. The view-point of the observers is imagined to be that of the camera and thus, the system projects a compensated image so as to render the source image at the observers’ view-point. It is imperative that the field of view of the camera includes the area of projection of the projector.
 
@@ -38,11 +45,19 @@ Please see [report](/assets/projects/pro_cam/procam_report.pdf) and [slides](/as
 
 ### More Results
 
-<iframe  width="420" height="315" frameborder="0" allowfullscreen
+<div align="center">
+
+<p style="position: relative; padding: 30px 0px 56.25% 0px; height: 0; overflow: hidden; max-width:420px;">
+<iframe  width="100%" height="100%" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 src="https://www.youtube.com/embed/s5yD-n6VyZI">
 </iframe>
-<iframe  width="420" height="315" frameborder="0" allowfullscreen
+</p>
+
+<p style="position: relative; padding: 30px 0px 56.25% 0px; height: 0; overflow: hidden; max-width:420px;">
+<iframe  width="100%" height="100%" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 src="https://www.youtube.com/embed/werCxrJ9nNI">
 </iframe>
+</p>
 
+</div>
 
