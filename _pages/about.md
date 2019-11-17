@@ -5,7 +5,7 @@ title: <strong>Shwetha</strong> Ram
 description: 
 
 profile:
-  align: right
+  align: left
   image: profile_pic.PNG
   address: >
 
