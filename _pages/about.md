@@ -19,4 +19,4 @@ I am currently involved in algorithm development and prototyping to enable some 
 
 Please see my [CV](/CV/) for more details.
 
-I am a Carnatic Vocalist, a disciple of [Dr. T S Sathyavathi](https://www.tssathyavathi.com) - check out [my music corner](https://shwetharam0407.github.io/music-corner/) if interested. In my free time, I do some amateur astronomy with  [SJAA](https://www.sjaa.net) - a little more about this on my blog, [StarStuff](https://shwetharam0407.github.io/star-stuff/).
+I am a Carnatic Vocalist, a disciple of [Dr. T S Sathyavathi](https://www.tssathyavathi.com) and also enjoy performing Bhavageethe (emotive poetry) - check out [my music corner](https://shwetharam0407.github.io/music-corner/) if interested. I also do some amateur astronomy with  [SJAA](https://www.sjaa.net) - a little more about this on my blog, [StarStuff](https://shwetharam0407.github.io/star-stuff/).
