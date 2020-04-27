@@ -3,12 +3,12 @@ layout: post
 title:  Building a Website with Jekyll al-folio theme and Hosting on GitHub Pages
 date:   2019-09-29 22:00:00
 description: A short summary of procedure followed and some lessons learnt while building this website
-comments: true
+comments: false
 ---
 Building this website was more trouble than it should have been- took me a whole three day weekend to build this and another blog! To be fair, I was completely new to Jekyll and GitHub Pages, my HTML and CSS were also very rusty. All the same, I think it would have been much easier if I had found everything in one place so naturally, that's my first blog post here. While I don't have the time to write a very detailed post, I'll try to document the procedure I finally followed in enough detail, so someone can follow along.
 
 
-### Installation on a macOS Mojave
+### Installation on macOS Mojave
 I found these resources useful and managed to get stuff done without needing sudo everywhere.
 
 [https://jekyllrb.com/docs/installation/macos/](https://jekyllrb.com/docs/installation/macos/)  
@@ -24,43 +24,36 @@ I found these resources useful and managed to get stuff done without needing sud
 
 I want to have both code and build in the same repo, so I have them on different branches. source branch has all the code, master is the deployment branch.
 
-#### 1. Fork theme ([al-folio](https://github.com/alshedivat/al-folio) in my case) and clone it.
 
-#### 2. In the folder, delete the .git folder 
-
-    cd al-folio/
-    
-    rm -r .git 
-    
-#### 3. Initialize a new empty repo
+#### 1. Initialize a new empty repo
 
     git init
 
-#### 4. Add some files common to both branches.
+#### 2. Add some files common to both branches.
 
     git add README.md .gitignore
     
     git commit -m "initial commit"
  
-#### 5. Create a repo on github called github_username.github.io
+#### 3. Create a repo on github called github_username.github.io
  
-#### 6. Set the github repo as your remote and push to master branch
+#### 4. Set the github repo as your remote and push to master branch
     
     git remote add origin https://github.com/github_username/github_username.github.io.git
     
     git push --set-upstream origin master
  
-#### 7. Create a source branch and add the source files and push them to source branch in remote repo
+#### 5. Create a source branch and add the source files and push them to source branch in remote repo. I forked theme [al-folio](https://github.com/alshedivat/al-folio).
 
     git checkout -b source
     git add .
     git commit -m "adding source files cloned from theme al-folio"
     git push origin source
   
-#### 8. Set the baseurl field in _config.yml to be an empty string as recommended for user webpages
+#### 6. Set the baseurl field in _config.yml to be an empty string as recommended for user webpages
 
 
-#### 9. Build and serve your site locally
+#### 7. Build and serve your site locally
 
 I ran into this error:
 
@@ -78,7 +71,7 @@ Run
 
 bundle exec jekyll serve worked after the fix. You can view the built website at localhost.
 
-#### 10. Deploying to gh-pages
+#### 8. Deploying to gh-pages
 
 If you upload the contents of _site folder now to gh-pages, you will find that links are broken and styles are missing. This is because, when you run bundle exec jekyll serve, Jekyll embeds localhost in the paths of the built HTML files. 
 
@@ -94,7 +87,7 @@ I added a site.title field to my _config.yml to get around this.
 
 Also note that Jekyll generates relative paths that require an active server to resolve them. If you simply open the built HTML files in a browser, you will find that the paths are not resolved and as a result, links are broken and styles are missing.
 
-#### 11. Check out master branch and add contents of the built site
+#### 9. Check out master branch and add contents of the built site
    
     git checkout master
 
@@ -110,3 +103,5 @@ I use this <commit hash> to keep track of which build corresponds to which commi
 Your website should be up and running on https://github_username.github.io, sometimes it takes a few minutes.
     
 ### It's time to start customizing your website now!
+
+
