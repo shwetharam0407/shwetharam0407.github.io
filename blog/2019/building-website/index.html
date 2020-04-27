@@ -100,7 +100,7 @@
   <article class="post-content">
     <p>Building this website was more trouble than it should have been- took me a whole three day weekend to build this and another blog! To be fair, I was completely new to Jekyll and GitHub Pages, my HTML and CSS were also very rusty. All the same, I think it would have been much easier if I had found everything in one place so naturally, that’s my first blog post here. While I don’t have the time to write a very detailed post, I’ll try to document the procedure I finally followed in enough detail, so someone can follow along.</p>
 
-<h3 id="installation-on-a-macos-mojave">Installation on a macOS Mojave</h3>
+<h3 id="installation-on-macos-mojave">Installation on macOS Mojave</h3>
 <p>I found these resources useful and managed to get stuff done without needing sudo everywhere.</p>
 
 <p><a href="https://jekyllrb.com/docs/installation/macos/">https://jekyllrb.com/docs/installation/macos/</a></p>
@@ -119,37 +119,28 @@
 
 <p>I want to have both code and build in the same repo, so I have them on different branches. source branch has all the code, master is the deployment branch.</p>
 
-<h4 id="1-fork-theme-al-folio-in-my-case-and-clone-it">1. Fork theme (<a href="https://github.com/alshedivat/al-folio">al-folio</a> in my case) and clone it.</h4>
-
-<h4 id="2-in-the-folder-delete-the-git-folder">2. In the folder, delete the .git folder</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd al-folio/
-
-rm -r .git 
-</code></pre></div></div>
-
-<h4 id="3-initialize-a-new-empty-repo">3. Initialize a new empty repo</h4>
+<h4 id="1-initialize-a-new-empty-repo">1. Initialize a new empty repo</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
 </code></pre></div></div>
 
-<h4 id="4-add-some-files-common-to-both-branches">4. Add some files common to both branches.</h4>
+<h4 id="2-add-some-files-common-to-both-branches">2. Add some files common to both branches.</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md .gitignore
 
 git commit -m "initial commit"
 </code></pre></div></div>
 
-<h4 id="5-create-a-repo-on-github-called-github_usernamegithubio">5. Create a repo on github called github_username.github.io</h4>
+<h4 id="3-create-a-repo-on-github-called-github_usernamegithubio">3. Create a repo on github called github_username.github.io</h4>
 
-<h4 id="6-set-the-github-repo-as-your-remote-and-push-to-master-branch">6. Set the github repo as your remote and push to master branch</h4>
+<h4 id="4-set-the-github-repo-as-your-remote-and-push-to-master-branch">4. Set the github repo as your remote and push to master branch</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/github_username/github_username.github.io.git
 
 git push --set-upstream origin master
 </code></pre></div></div>
 
-<h4 id="7-create-a-source-branch-and-add-the-source-files-and-push-them-to-source-branch-in-remote-repo">7. Create a source branch and add the source files and push them to source branch in remote repo</h4>
+<h4 id="5-create-a-source-branch-and-add-the-source-files-and-push-them-to-source-branch-in-remote-repo-i-forked-theme-al-folio">5. Create a source branch and add the source files and push them to source branch in remote repo. I forked theme <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b source
 git add .
@@ -157,9 +148,9 @@ git commit -m "adding source files cloned from theme al-folio"
 git push origin source
 </code></pre></div></div>
 
-<h4 id="8-set-the-baseurl-field-in-_configyml-to-be-an-empty-string-as-recommended-for-user-webpages">8. Set the baseurl field in _config.yml to be an empty string as recommended for user webpages</h4>
+<h4 id="6-set-the-baseurl-field-in-_configyml-to-be-an-empty-string-as-recommended-for-user-webpages">6. Set the baseurl field in _config.yml to be an empty string as recommended for user webpages</h4>
 
-<h4 id="9-build-and-serve-your-site-locally">9. Build and serve your site locally</h4>
+<h4 id="7-build-and-serve-your-site-locally">7. Build and serve your site locally</h4>
 
 <p>I ran into this error:</p>
 
@@ -180,7 +171,7 @@ jekyll 3.8.5 | Error:  superclass must be a Class (Faraday::DeprecatedConstant g
 
 <p>bundle exec jekyll serve worked after the fix. You can view the built website at localhost.</p>
 
-<h4 id="10-deploying-to-gh-pages">10. Deploying to gh-pages</h4>
+<h4 id="8-deploying-to-gh-pages">8. Deploying to gh-pages</h4>
 
 <p>If you upload the contents of _site folder now to gh-pages, you will find that links are broken and styles are missing. This is because, when you run bundle exec jekyll serve, Jekyll embeds localhost in the paths of the built HTML files.</p>
 
@@ -198,7 +189,7 @@ jekyll 3.8.5 | Error:  superclass must be a Class (Faraday::DeprecatedConstant g
 
 <p>Also note that Jekyll generates relative paths that require an active server to resolve them. If you simply open the built HTML files in a browser, you will find that the paths are not resolved and as a result, links are broken and styles are missing.</p>
 
-<h4 id="11-check-out-master-branch-and-add-contents-of-the-built-site">11. Check out master branch and add contents of the built site</h4>
+<h4 id="9-check-out-master-branch-and-add-contents-of-the-built-site">9. Check out master branch and add contents of the built site</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout master
 </code></pre></div></div>
@@ -218,21 +209,9 @@ git commit -m "build &lt;commit hash&gt;"
 
 <h3 id="its-time-to-start-customizing-your-website-now">It’s time to start customizing your website now!</h3>
 
+
   </article>
 
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname  = 'sram';
-      var disqus_identifier = '/blog/2019/building-website';
-      var disqus_title      = "Building a Website with Jekyll al-folio theme and Hosting on GitHub Pages";
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   
 
 </div>
