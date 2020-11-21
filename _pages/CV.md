@@ -5,5 +5,5 @@ title: CV
 description: Curriculum Vitae
 ---
 
-<meta HTTP-EQUIV="REFRESH" content="0; url=/assets/pdf/CV.pdf">
+<meta HTTP-EQUIV="REFRESH" content="0; url=/assets/pdf/CV_SRam.pdf">
 
