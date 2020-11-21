@@ -9,7 +9,7 @@ profile:
   image: profile_pic.PNG
   address: >
 
-news: true
+news: false
 social: true
 ---
 
