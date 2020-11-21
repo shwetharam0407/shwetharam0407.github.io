@@ -26,6 +26,3 @@ img: /assets/projects/RVW/img/RVW.png
 
 
 This project addressed the problem of presenting a VR experience to a user in the comfort of the living room by proposing a scheme to ‘retarget’ a virtual world to a given physical environment. Semantic relationships between objects are extracted from the virtual world. The retargeting aims to position the virtual world objects such that these semantic relationships are preserved and the match with the geometry of the physical environment is maximized. This retargeting scheme was successfully applied to retarget different virtual worlds to a real world physical environment.
-
-
-Please see [slides](/assets/projects/RVW/Retargeting_Virtual_Worlds_ppt.pdf) and [project report](/assets/projects/RVW/Retargeting_Virtual_Worlds.pdf) for more details
