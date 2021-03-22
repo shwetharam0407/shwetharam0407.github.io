@@ -13,7 +13,7 @@ description:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dLbjyZXyC9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### [Retargeting Virtual Worlds](projects/RVW/)
+### [Retargeting Virtual Worlds](RVW/)
 
 <div class="img">
     <img class="col three left" src="{{ site.baseurl }}/assets/projects/RVW/img/RVW.png" alt="" title="RVW"/>
