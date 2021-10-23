@@ -7,5 +7,7 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jemoji'
     gem 'unicode_utils'
-    gem 'faraday', "< 0.16"
+    gem 'faraday'
 end
+
+gem "webrick", "~> 1.7"
