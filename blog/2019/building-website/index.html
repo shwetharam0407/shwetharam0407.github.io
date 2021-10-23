@@ -117,12 +117,12 @@
 
 <h4 id="1-initialize-a-new-empty-repo">1. Initialize a new empty repo</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
 </code></pre></div></div>
 
 <h4 id="2-add-some-files-common-to-both-branches">2. Add some files common to both branches.</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md .gitignore
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md .gitignore
 
 git commit -m "initial commit"
 </code></pre></div></div>
@@ -131,14 +131,14 @@ git commit -m "initial commit"
 
 <h4 id="4-set-the-github-repo-as-your-remote-and-push-to-master-branch">4. Set the github repo as your remote and push to master branch</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/github_username/github_username.github.io.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/github_username/github_username.github.io.git
 
 git push --set-upstream origin master
 </code></pre></div></div>
 
 <h4 id="5-create-a-source-branch-and-add-the-source-files-and-push-them-to-source-branch-in-remote-repo-i-forked-theme-al-folio">5. Create a source branch and add the source files and push them to source branch in remote repo. I forked theme <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b source
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b source
 git add .
 git commit -m "adding source files cloned from theme al-folio"
 git push origin source
@@ -150,19 +150,19 @@ git push origin source
 
 <p>I ran into this error:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
 
 jekyll 3.8.5 | Error:  superclass must be a Class (Faraday::DeprecatedConstant given). 
 </code></pre></div></div>
 
 <p>Fixed this by forcing an older version of faraday gem by adding this line to Gemfile</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'faraday', "&lt; 0.16" 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'faraday', "&lt; 0.16" 
 </code></pre></div></div>
 
 <p>Run</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle update faraday
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle update faraday
 </code></pre></div></div>
 
 <p>bundle exec jekyll serve worked after the fix. You can view the built website at localhost.</p>
@@ -173,12 +173,12 @@ jekyll 3.8.5 | Error:  superclass must be a Class (Faraday::DeprecatedConstant g
 
 <p>For deployment, run</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll build
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll build
 </code></pre></div></div>
 
 <p>Here, I came across this warning:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GitHub Metadata: site.name is set in _config.yml, but many plugins and themes expect site.title to be used instead. To avoid potential inconsistency, Jekyll GitHub Metadata will not set site.title to the repository's name.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GitHub Metadata: site.name is set in _config.yml, but many plugins and themes expect site.title to be used instead. To avoid potential inconsistency, Jekyll GitHub Metadata will not set site.title to the repository's name.
 </code></pre></div></div>
 
 <p>I added a site.title field to my _config.yml to get around this.</p>
@@ -187,18 +187,18 @@ jekyll 3.8.5 | Error:  superclass must be a Class (Faraday::DeprecatedConstant g
 
 <h4 id="9-check-out-master-branch-and-add-contents-of-the-built-site">9. Check out master branch and add contents of the built site</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout master
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout master
 </code></pre></div></div>
 
 <p>Copy contents of the _site folder to the root folder of your website. I found it useful to have _site folder in my .gitignore.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
 git commit -m "build &lt;commit hash&gt;" 
 </code></pre></div></div>
 
 <p>I use this <commit hash=""> to keep track of which build corresponds to which commit in the source branch</commit></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
 </code></pre></div></div>
 
 <p>Your website should be up and running on https://github_username.github.io, sometimes it takes a few minutes.</p>
